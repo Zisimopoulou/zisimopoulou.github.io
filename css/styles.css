@@ -1373,172 +1373,6 @@ footer {
   padding: 0 0 0 15px;
 }
 
-```css
-/* =========================================
-   Research Section
-   ========================================= */
-
-#research {
-  padding: 80px 15px;
-  background: #fbfaf8;
-  border-bottom: 1px solid #e8e5e1;
-  text-align: center;
-}
-
-#research .container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-#research .heading {
-  color: #374054;
-  font-size: 2.2em;
-  font-weight: 400;
-  margin-bottom: 55px;
-}
-
-/* Research cards */
-
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  text-align: left;
-}
-
-.research-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 330px;
-  padding: 32px;
-  background: #fff;
-  border: 1px solid #e5e1dc;
-  border-radius: 10px;
-  box-shadow: 0 4px 18px rgba(55, 64, 84, 0.05);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
-}
-
-.research-card:hover {
-  transform: translateY(-5px);
-  border-color: #c9a98d;
-  box-shadow: 0 12px 30px rgba(55, 64, 84, 0.10);
-}
-
-/* Card header */
-
-.research-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 22px;
-}
-
-.research-level {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 20px;
-  background: #f3eee9;
-  color: #8b684e;
-  font-size: 0.75em;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.research-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  color: #c28f6c;
-  font-size: 1.2em;
-}
-
-/* Titles */
-
-.research-card h3 {
-  margin: 0 0 18px 0;
-  color: #374054;
-  font-size: 1.45em;
-  font-weight: 500;
-  line-height: 1.35;
-}
-
-/* Description */
-
-.research-description {
-  margin: 0;
-  color: #74808a;
-  font-size: 0.95em;
-  line-height: 1.8;
-}
-
-/* Thesis link */
-
-.research-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: auto;
-  padding-top: 25px;
-
-  color: #3498db;
-  font-size: 0.9em;
-  font-weight: 700;
-  text-decoration: none;
-
-  transition: color 0.2s ease, gap 0.2s ease;
-}
-
-.research-link:hover {
-  color: #217dbb;
-  text-decoration: none;
-  gap: 12px;
-}
-
-.research-link .arrow {
-  font-size: 1.2em;
-  transition: transform 0.2s ease;
-}
-
-.research-link:hover .arrow {
-  transform: translateX(3px);
-}
-
-/* =========================================
-   Responsive
-   ========================================= */
-
-@media only screen and (max-width: 768px) {
-
-  #research {
-    padding: 60px 15px;
-  }
-
-  #research .heading {
-    margin-bottom: 40px;
-  }
-
-  .research-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .research-card {
-    min-height: auto;
-    padding: 25px;
-  }
-
-  .research-card h3 {
-    font-size: 1.3em;
-  }
-}
-
 @media only screen and (max-width: 480px) {
 
   #research {
@@ -1684,5 +1518,194 @@ footer {
   }
 }
 
+/* ================================
+   Research
+   ================================ */
 
+#research {
+  padding: 80px 15px;
+  background: #fbfaf8;
+  border-bottom: 1px solid #e8e5e1;
+  text-align: center;
+}
+
+#research .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#research .heading {
+  color: #374054;
+  font-size: 2.2em;
+  font-weight: 400;
+  margin: 0 0 55px 0;
+}
+
+
+/* Research cards */
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e5e1dc;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 18px rgba(55, 64, 84, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+  border-color: #c9a98d;
+  box-shadow: 0 12px 30px rgba(55, 64, 84, 0.10);
+}
+
+
+/* Header */
+
+.research-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.research-level {
+  display: inline-block;
+  padding: 6px 12px;
+
+  background: #f3eee9;
+  border-radius: 20px;
+
+  color: #8b684e;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.research-icon {
+  color: #c28f6c;
+  font-size: 1.2em;
+}
+
+
+/* Thesis title */
+
+.research-card h3 {
+  margin: 0 0 18px 0;
+
+  color: #374054;
+  font-size: 1.45em;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+
+/* Description */
+
+.research-description {
+  margin: 0;
+
+  color: #74808a;
+  font-size: 0.95em;
+  line-height: 1.8;
+}
+
+
+/* Link */
+
+.research-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: auto;
+  padding-top: 25px;
+
+  color: #3498db;
+  font-size: 0.9em;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.research-link:hover {
+  color: #217dbb;
+  text-decoration: none;
+  gap: 12px;
+}
+
+.research-link .arrow {
+  font-size: 1.2em;
+}
+
+
+/* ================================
+   Mobile
+   ================================ */
+
+@media only screen and (max-width: 768px) {
+
+  #research {
+    padding: 60px 15px;
+  }
+
+  #research .heading {
+    margin-bottom: 40px;
+  }
+
+  .research-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .research-card {
+    min-height: auto;
+    padding: 25px;
+  }
+
+  .research-card h3 {
+    font-size: 1.3em;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  #research {
+    padding: 50px 15px;
+  }
+
+  .research-card {
+    padding: 22px;
+  }
+
+  .research-card h3 {
+    font-size: 1.2em;
+  }
+
+  .research-description {
+    font-size: 0.9em;
+    line-height: 1.7;
+  }
+}
 
